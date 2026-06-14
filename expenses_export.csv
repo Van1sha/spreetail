@@ -1,0 +1,48 @@
+Date,Description,Paid By,Amount,Currency,Split Between,Split Type,Category,Notes
+2025-02-01,Rent - February,Aisha,48000,INR,"Aisha,Rohan,Priya,Meera",equal,Rent,Monthly rent
+2025-02-01,Electricity Bill - January,Rohan,2400,INR,"Aisha,Rohan,Priya,Meera",equal,Utilities,
+2025-02-05,Groceries - weekly,Priya,3200,INR,"Aisha,Rohan,Priya,Meera",equal,Groceries,
+2025-02-08,WiFi Recharge,Aisha,1499,INR,"Aisha,Rohan,Priya,Meera",equal,Utilities,3 month plan
+02/12/2025,Dinner at Bombay Canteen,Rohan,4800,INR,"Aisha,Rohan,Priya,Meera",equal,Food,
+2025-02-12,Dinner at Bombay Canteen,Priya,5200,INR,"Aisha,Rohan,Priya,Meera",equal,Food,Same dinner logged differently
+2025-02-15,Groceries - weekly,Meera,2850,INR,"Aisha,Rohan,Priya,Meera",equal,Groceries,
+2025-02-18,House cleaning supplies,Aisha,₹1750,INR,"Aisha,Rohan,Priya,Meera",equal,Household,
+2025-02-20,Water purifier service,Rohan,"3,500",INR,"Aisha,Rohan,Priya,Meera",equal,Utilities,Annual maintenance
+2025-02-25,Gas cylinder,Priya,980,INR,"Aisha,Rohan,Priya,Meera",equal,Utilities,
+2025-03-01,Rent - March,Aisha,48000,INR,"Aisha,Rohan,Priya,Meera",equal,Rent,Monthly rent
+03-05-2025,Electricity Bill - February,Rohan,2850,INR,"Aisha,Rohan,Priya,Meera",equal,Utilities,
+2025-03-08,Groceries - weekly,Meera,3400,INR,"Aisha,Rohan,Priya,Meera",equal,Groceries,
+2025-03-10,Yoga class subscription,Priya,2000,INR,"Priya,Aisha",percentage,Fitness,Priya:70 Aisha:30
+2025-03-12,Goa Trip - Hotel booking,Rohan,32000,INR,"Aisha,Rohan,Priya,Meera,Dev",equal,Travel,3 nights
+2025-03-13,Goa Trip - Car rental,Dev,8500,INR,"Aisha,Rohan,Priya,Meera,Dev",equal,Travel,
+2025-03-13,Goa Trip - Fuel,Aisha,4200,INR,"Aisha,Rohan,Priya,Meera,Dev",equal,Travel,
+2025-03-14,Goa Trip - Dinner,Dev,150,USD,"Aisha,Rohan,Priya,Meera,Dev",equal,Travel,Paid in dollars at tourist place
+2025-03-14,Goa Trip - Water sports,Rohan,85,USD,"Aisha,Rohan,Priya,Meera,Dev",equal,Travel,Dollar rate activity
+2025-03-14,Goa Trip - Water sports,Rohan,85,,"Aisha,Rohan,Priya,Meera,Dev",equal,Travel,
+2025-03-15,Goa Trip - Souvenirs,Priya,3200,INR,"Aisha,Rohan,Priya,Dev",shares,Travel,Aisha:2 Rohan:0 Priya:1 Dev:1
+2025-03-15,Goa Trip - Lunch,Meera,2800,INR,"Aisha,Rohan,Priya,Meera,Dev",equal,Travel,
+2025-03-18,Rohan paid back Aisha,Rohan,-5000,INR,"Rohan,Aisha",exact,Settlement,Partial settlement
+2025-03-20,Plumber visit,Meera,1800,INR,"Aisha,Rohan,Priya,Meera",equal,Household,
+2025-03-25,Groceries - weekly,Aisha,4100,INR,"Aisha,Rohan,Priya,Meera",equal,Groceries,
+2025-03-28,Farewell dinner for Meera,Rohan,6500,INR,"Aisha,Rohan,Priya,Meera",equal,Food,Meera's last day
+2025-03-31,Meera moves out,,,,,,,"Meera's last day in flat"
+2025-04-01,Rent - April,Aisha,48000,INR,"Aisha,Rohan,Priya",equal,Rent,
+2025-04-01,Electricity Bill - March,Rohan,3100,INR,"Aisha,Rohan,Priya,Meera",equal,Utilities,Meera included but already moved out
+2025-04-05,Groceries - weekly,Priya,2900,INR,"Aisha,Rohan,Priya",equal,Groceries,
+2025-04-10,Netflix subscription,Aisha,649,INR,"Aisha,Rohan,Priya",equal,Entertainment,
+2025-04-15,Sam moves in,,,,,,,"Sam joins mid-April"
+2025-04-15,Groceries - weekly,Rohan,3300,INR,"Aisha,Rohan,Priya,Sam",equal,Groceries,
+2025-04-18,Kitchen utensils,Sam,4500,INR,"Aisha,Rohan,Priya,Sam",equal,Household,New member contribution
+2025-04-20,Dinner party,Priya,8200,INR,"Aisha,Rohan,Priya,Sam",exact,Food,"Aisha:2500,Rohan:2200,Priya:1500,Sam:2000"
+2025-04-20,Dinner party,Priya,8200,INR,"Aisha,Rohan,Priya,Sam",exact,Food,"Aisha:2500,Rohan:2200,Priya:1500,Sam:2000"
+2025-04-22,Cab to airport,Rohan,1200,INR,"Rohan,Sam",equal,Transport,
+2025-04-25,Groceries - weekly,Aisha,3600,INR,"Aisha,Rohan,Priya,Sam",equal,Groceries,
+2025-04-28,Electricity Bill - April,Rohan,2750,INR,"Aisha,Rohan,Priya,Sam",equal,Utilities,
+2025-05-01,Rent - May,Aisha,48000,INR,"Aisha,Rohan,Priya,Sam",equal,Rent,
+2025-05-03,Gym membership,Sam,6000,INR,"Sam,Rohan",percentage,Fitness,Sam:60 Rohan:40
+2025-05-05,Groceries - weekly,Priya,3100,INR,"Aisha,Rohan,Priya,Sam",equal,Groceries,
+2025-05-08,Pest control,Aisha,2200,INR,"Aisha,Rohan,Priya,Sam",equal,Household,
+2025-05-10,Movie night snacks,Sam,1500,INR,"Aisha,Rohan,Priya,Sam",equal,Food,
+2025-05-12,Printer ink + paper,Rohan,1850,INR,"Rohan,Priya",shares,Office,Rohan:3 Priya:2
+2025-07-20,Advance booking - Party hall,Aisha,15000,INR,"Aisha,Rohan,Priya,Sam",equal,Events,Future date
+2025-05-15,Groceries - weekly,Meera,2600,INR,"Aisha,Rohan,Priya,Sam",equal,Groceries,Meera paying after moving out?

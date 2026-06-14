@@ -1,0 +1,27 @@
+# Node dependency directories
+node_modules/
+jspm_packages/
+
+# Build directories
+dist/
+build/
+
+# Local databases
+*.db
+*.sqlite
+server/splitwise.db
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+
+# Uploads directory
+server/uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
