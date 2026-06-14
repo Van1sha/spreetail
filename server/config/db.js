@@ -1,5 +1,3 @@
-import sqlite3 from 'sqlite3';
-import pg from 'pg';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
@@ -12,9 +10,14 @@ const isPostgres = !!(process.env.DATABASE_URL || process.env.DB_HOST);
 
 let pool;
 let sqliteDbInstance = null;
+let runQuery;
 
 if (isPostgres) {
-  console.log('Database configuration: PostgreSQL mode');
+  console.log('Database configuration: PostgreSQL mode detected');
+  // Dynamically import pg only when needed
+  const pgModule = await import('pg');
+  const Pool = pgModule.default.Pool;
+
   const pgConfig = process.env.DATABASE_URL
     ? {
         connectionString: process.env.DATABASE_URL,
@@ -27,11 +30,17 @@ if (isPostgres) {
         user: process.env.DB_USER || 'postgres',
         password: process.env.DB_PASSWORD || 'postgres',
       };
-  pool = new pg.Pool(pgConfig);
-} else {
-  console.log('Database configuration: SQLite local fallback mode');
-  const dbPath = path.join(__dirname, '..', 'splitwise.db');
   
+  const pgPool = new Pool(pgConfig);
+  pool = pgPool;
+  runQuery = (sql, params) => pgPool.query(sql, params);
+} else {
+  console.log('Database configuration: SQLite local fallback mode detected');
+  // Dynamically import sqlite3 only when needed
+  const sqlite3Module = await import('sqlite3');
+  const sqlite3 = sqlite3Module.default;
+
+  const dbPath = path.join(__dirname, '..', 'splitwise.db');
   const db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
       console.error('Failed to connect to SQLite database:', err.message);
@@ -55,6 +64,8 @@ if (isPostgres) {
       });
     });
   };
+
+  runQuery = sqliteQuery;
 
   pool = {
     query: sqliteQuery,
@@ -98,6 +109,13 @@ export async function initializeDatabase() {
     console.error('Failed to initialize database schema:', err.message);
     throw err;
   }
+}
+
+/**
+ * Proxy query function to behave like pool.query
+ */
+export function query(sql, params) {
+  return runQuery(sql, params);
 }
 
 export default pool;
