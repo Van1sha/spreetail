@@ -28,35 +28,32 @@ A full-stack shared expenses management application built for flat mates to trac
 
 ### Prerequisites
 
-- Node.js 18+ 
-- PostgreSQL 14+
+- Node.js 18+ (Node.js v22.20+ recommended)
 - npm 9+
+- PostgreSQL (Optional, only required for production deployment)
 
-### Database Setup
+### Database Configuration
 
-```bash
-# Create the database
-psql -U postgres -c "CREATE DATABASE splitwise_db;"
+* **Local Development (Default)**: The application uses **SQLite** natively. There is **no database setup command needed**. On first start, it will create a local file database at [server/splitwise.db](file:///C:/Users/vanis/OneDrive/Desktop/spreetail/server/splitwise.db) and automatically run the schema setup.
+* **Production Deployment**: Setting the `DATABASE_URL` environment variable will instruct the database engine to connect to PostgreSQL (e.g. Supabase, Neon, or Render PostgreSQL).
 
-# The schema auto-initializes on first server start
-```
+### Running the App Locally
 
-### Backend
+1. **Backend Server**:
+   ```bash
+   cd server
+   npm install
+   npm start
+   ```
+   *(Starts on http://localhost:5000)*
 
-```bash
-cd server
-cp .env.example .env    # Edit with your PostgreSQL credentials
-npm install
-npm run dev             # Starts on http://localhost:5000
-```
-
-### Frontend
-
-```bash
-cd client
-npm install
-npm run dev             # Starts on http://localhost:5173
-```
+2. **Frontend client**:
+   ```bash
+   cd client
+   npm install
+   npm run dev
+   ```
+   *(Starts on http://localhost:5173)*
 
 ### Default Test Accounts
 
